@@ -574,6 +574,8 @@ body .section1 .container .header1 .menu2 ul li h5 {
 }
 
 .uslugi .container .uslugi_div .usluga img {
+  width: 200px;
+  height: 200px;
   margin-bottom: 10px;
 }
 

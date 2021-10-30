@@ -21,7 +21,15 @@
 // })();
 
 $(".phone_menu").click(function () {
-    $(".menu2").slideToggle("1000")
+    $(".menu2").slideToggle(800);
+    if ($(".main_h1").css("margin-top") == "270px") {
+        $(".main_h1").css("margin-top","70px");
+        $(".section1").css("height") = "1258px";
+    }
+    else{
+        $(".main_h1").css("margin-top","270px");
+        $(".section1").css("height") = "1458px";
+    }
 })
 
 const swiper = new Swiper('.swiper-container', {

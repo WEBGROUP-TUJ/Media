@@ -24,7 +24,6 @@ body .section1 {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  max-height: 1258px;
 }
 
 body .section1 .container .header1 {
@@ -175,6 +174,7 @@ body .section1 .container .header1 .menu2 {
   top: 100px;
   left: 50%;
   margin-left: -200px;
+  background: #000;
 }
 
 body .section1 .container .header1 .menu2 a {
@@ -198,7 +198,7 @@ body .section1 .container .header1 .menu2 ul {
   margin-bottom: 0px;
   border-bottom: 5px black solid;
   width: 400px;
-  background: rgba(163, 163, 163, 0.15);
+  background: rgba(187, 187, 187, 0.15);
 }
 
 body .section1 .container .header1 .menu2 ul li {

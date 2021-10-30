@@ -1,35 +1,13 @@
-// (function(){
-//   'use strict';
-
-//   class Menu {
-//     constructor(settings) {
-//       this.nodeMenu = settings.nodeMenu;
-//       settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
-//     }
-
-//     toggle() {
-//       return this.nodeMenu.classList.toggle('js-menu_activated');
-//     }
-//   }
-
-//   let nodeMenu = document.querySelector('body');
-  
-//   new Menu({
-//     nodeMenu: nodeMenu,
-//     nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
-//   });
-// })();
-
 $(".phone_menu").click(function () {
     $(".menu2").slideToggle(800);
-    if ($(".main_h1").css("margin-top") == "270px") {
-        $(".main_h1").css("margin-top","70px");
-        $(".section1").css("height") = "1258px";
-    }
-    else{
-        $(".main_h1").css("margin-top","270px");
-        $(".section1").css("height") = "1458px";
-    }
+    // if ($(".main_h1").css("margin-top") == "270px") {
+    //     $(".main_h1").css("margin-top","70px");
+    //     $(".section1").css("height") = "1258px";
+    // }
+    // else{
+    //     $(".main_h1").css("margin-top","270px");
+    //     $(".section1").css("height") = "1458px";
+    // }
 })
 
 const swiper = new Swiper('.swiper-container', {

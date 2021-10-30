@@ -21,6 +21,9 @@ body {
 
 body .section1 {
   padding: 50px 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body .section1 .container .header1 {
@@ -37,6 +40,9 @@ body .section1 .container .header1 {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 70px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body .section1 .container .header1 .menu1 {
@@ -168,6 +174,7 @@ body .section1 .container .header1 .menu2 {
   top: 100px;
   left: 50%;
   margin-left: -200px;
+  background: #000;
 }
 
 body .section1 .container .header1 .menu2 a {
@@ -190,8 +197,8 @@ body .section1 .container .header1 .menu2 ul {
   padding: 15px;
   margin-bottom: 0px;
   border-bottom: 5px black solid;
+  background: rgba(187, 187, 187, 0.15);
   width: 400px;
-  background: rgba(255, 255, 255);
 }
 
 body .section1 .container .header1 .menu2 ul li {
@@ -200,9 +207,9 @@ body .section1 .container .header1 .menu2 ul li {
 
 body .section1 .container .header1 .menu2 ul li h5 {
   text-transform: uppercase;
-  color: #33C1FF;
+  color: #ffffff;
   font-family: "Gilroy";
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -425,7 +432,6 @@ body .section1 .container .header1 .menu2 ul li h5 {
 
 .result {
   padding: 50px 0;
-  background: #ffffff;
 }
 
 .result .container {
@@ -547,7 +553,6 @@ body .section1 .container .header1 .menu2 ul li h5 {
 }
 
 .uslugi .container .uslugi_div .usluga {
-  padding: 10px 35px 20px 35px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -565,7 +570,7 @@ body .section1 .container .header1 .menu2 ul li h5 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 550px;
+  height: 500px;
   width: 270px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
@@ -573,13 +578,11 @@ body .section1 .container .header1 .menu2 ul li h5 {
   color: white;
 }
 
-.uslugi .container .uslugi_div .usluga img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
+.uslugi .container .uslugi_div .usluga .usluga_div {
+  padding: 0px 35px 20px 35px;
 }
 
-.uslugi .container .uslugi_div .usluga h4 {
+.uslugi .container .uslugi_div .usluga .usluga_div h4 {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 600;
@@ -587,7 +590,7 @@ body .section1 .container .header1 .menu2 ul li h5 {
   margin-bottom: 10px;
 }
 
-.uslugi .container .uslugi_div .usluga p {
+.uslugi .container .uslugi_div .usluga .usluga_div p {
   font-family: Gilroy;
   font-style: normal;
   font-weight: normal;
@@ -600,8 +603,12 @@ body .section1 .container .header1 .menu2 ul li h5 {
   height: 145px;
 }
 
-.uslugi .container .uslugi_div .usluga a {
-  width: 200px;
+.uslugi .container .uslugi_div .usluga .usluga_div div {
+  width: 100%;
+}
+
+.uslugi .container .uslugi_div .usluga .usluga_div a {
+  width: 100%;
   height: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -626,16 +633,600 @@ body .section1 .container .header1 .menu2 ul li h5 {
   border-radius: 3px;
 }
 
-.uslugi .container .uslugi_div .usluga a:nth-of-type(1) {
+.uslugi .container .uslugi_div .usluga .usluga_div a:nth-of-type(1) {
   margin-bottom: 10px;
   background: rgba(0, 0, 0, 0.3);
 }
 
-.uslugi .container .uslugi_div .usluga a:nth-of-type(2) {
+.uslugi .container .uslugi_div .usluga .usluga_div a:nth-of-type(2) {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.uslugi .container .uslugi_div .usluga img {
+  width: 100%;
+  border-radius: 3px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.last {
+  padding: 50px 0;
+}
+
+.last .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.last .container h3 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.last .container .last_div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.last .container .last_div .last_text {
+  margin: 15px;
+  width: 370px;
+  height: 180px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 21px 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.last .container .last_div .last_text h4 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.last .container .last_div .last_text p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #676767;
+}
+
+.last .container .last_div .last_text a {
+  width: 120px;
+  height: 30px;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #000;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.last .container a {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-decoration: none;
+  width: 300px;
+  height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 15px;
+}
+
+.last .container a:hover {
+  color: white;
+  background: #000;
+}
+
+.market {
+  padding: 50px 0;
+}
+
+.market .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.market .container .result_text h2 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 33px;
+  color: #ffffff;
+}
+
+.market .container .result_text p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #b6b6b6;
+  margin-bottom: 20px;
+}
+
+.market .container .resul_img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form {
+  background: #ffffff;
+  padding: 50px;
+}
+
+.form .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form .container h3 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.form .container p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #575757;
+  margin-bottom: 40px;
+}
+
+.form .container .form_div {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form .container .form_div .form_text {
+  margin-right: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form .container .form_div .form_text h4 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  margin-bottom: 33px;
+}
+
+.form .container .form_div .form_text p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.form .container .form_div .form_input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form .container .form_div .form_input form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form .container .form_div .form_input form input {
+  width: 470px;
+  height: 60px;
+  border: 1px solid #C7C7C7;
+  border-radius: 3px;
+  padding: 20px 21px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.form .container .form_div .form_input form input::-webkit-input-placeholder {
+  color: #A5A5A5 !important;
+}
+
+.form .container .form_div .form_input form input::-moz-placeholder {
+  color: #A5A5A5 !important;
+}
+
+.form .container .form_div .form_input form input:-ms-input-placeholder {
+  color: #A5A5A5 !important;
+}
+
+.form .container .form_div .form_input form input::-ms-input-placeholder {
+  color: #A5A5A5 !important;
+}
+
+.form .container .form_div .form_input form input::placeholder {
+  color: #A5A5A5 !important;
+}
+
+.form .container .form_div .form_input form button {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-decoration: none;
+  width: 300px;
+  height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+}
+
+.form .container .form_div .form_input form button:hover {
+  color: white;
+  background: #000;
+}
+
 @media (max-width: 600px) {
+  .form {
+    background: #ffffff;
+    padding: 50px;
+  }
+
+  .form .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form .container h3 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .form .container p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #575757;
+    margin-bottom: 40px;
+  }
+
+  .form .container .form_div {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form .container .form_div .form_text {
+    margin-right: 0px;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form .container .form_div .form_text h4 {
+    text-align: center;
+  }
+
+  .form .container .form_div .form_text p {
+    text-align: center;
+  }
+
+  .form .container .form_div .form_input {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .form .container .form_div .form_input form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form .container .form_div .form_input form input {
+    width: 300px;
+  }
+
+  .last {
+    padding: 30px 0;
+  }
+
+  .last h3 {
+    font-size: 25px !important;
+  }
+
+  .uslugi {
+    padding: 30px 0;
+  }
+
+  .uslugi .container .uslugi_div .usluga {
+    height: 500px;
+    width: 300px;
+  }
+
+  .uslugi .container .uslugi_div .usluga .usluga_div div {
+    width: 100%;
+  }
+
+  .uslugi .container .uslugi_div .usluga .usluga_div a {
+    width: 100%;
+  }
+
   .uslugi {
     padding: 30px 0;
   }
@@ -699,6 +1290,60 @@ body .section1 .container .header1 .menu2 ul li h5 {
     height: 250px;
   }
 
+  .market {
+    padding: 30px 0 !important;
+  }
+
+  .market .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+
+  .market .container .result_text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .market .container .result_text h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .market .container .result_text p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 15px !important;
+  }
+
+  .market .container .resul_img img {
+    width: 230px;
+    height: 250px;
+  }
+
   .uslugi_tags .tags_text {
     margin-bottom: 15px;
   }
@@ -744,7 +1389,7 @@ body .section1 .container .header1 .menu2 ul li h5 {
   }
 
   .header1 {
-    margin-bottom: 30px !important;
+    margin-bottom: 0px !important;
   }
 
   .main_text {
@@ -785,6 +1430,10 @@ body .section1 .container .header1 .menu2 ul li h5 {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 40px;
+    margin-top: 70px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
   }
 
   .main_text .main_h1 h1 {

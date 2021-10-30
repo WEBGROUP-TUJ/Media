@@ -197,8 +197,8 @@ body .section1 .container .header1 .menu2 ul {
   padding: 15px;
   margin-bottom: 0px;
   border-bottom: 5px black solid;
-  width: 400px;
   background: rgba(187, 187, 187, 0.15);
+  width: 400px;
 }
 
 body .section1 .container .header1 .menu2 ul li {

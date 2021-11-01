@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="css/style-min.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
 
     <script defer src="js/jquery-3.2.1.min.js"></script>
@@ -36,13 +37,31 @@
     <script src="js/wow.min.js"></script>
     <script>
         new WOW({
-            mobile: false,       // default
+            mobile: false,
+            live: true    // default
         }).init();
+
     </script>
 </head>
 
 <body>
-    <section class="section1 parallax-window" data-parallax="scroll" data-image-src="./img/bg.png">
+
+    <div id="scroll-percentage">
+        <div class="percentage"></div>
+    </div>
+
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <section class="section1">
+        <!-- <section class="section1 parallax-window" data-parallax="scroll" data-image-src="./img/bg.png"> -->
         <div class="container">
             <header class="header1">
                 <div class="logo">
@@ -116,11 +135,11 @@
             </header>
             <div class="main_text">
                 <div class="main_h1 col-lg-6">
-                    <h1>Media Mind</h1>
-                    <h2>Развивай свой бизнес с нами</h2>
-                    <h3>Десятки успешно закрытых кейсов
+                    <h1 class="wow fadeInUp">Media Mind</h1>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Развивай свой бизнес с нами</h2>
+                    <h3 class="wow fadeInUp" data-wow-delay="0.3s">Десятки успешно закрытых кейсов
                         развеят все ваши сомнения!</h3>
-                    <a href="#">Свяжитесь с нами</a>
+                    <a class="wow fadeInUp" data-wow-delay="0.4s" href="#">Свяжитесь с нами</a>
                 </div>
                 <div class="main_img col-lg-6">
                     <img src="img/Online ads-amico 1.png" alt="">
@@ -128,11 +147,11 @@
 
             </div>
             <div class="agency_text">
-                <h4>Агенство Интеренет Маркетинга в Ташкенте и по всему Узбекистану.</h4>
+                <h4 class="wow fadeInUp" data-wow-delay="0.5s">Агенство Интеренет Маркетинга в Ташкенте и по всему Узбекистану.</h4>
             </div>
             <div class="uslugi_tags">
                 <div class="tags_text col-lg-5">
-                    <h4>Предлагаем комплексные услуги
+                    <h4 class="wow fadeInUp" data-wow-delay="0.6s">Предлагаем комплексные услуги
                         интернет маркетинга в Ташкенте.</h4>
                     <div class="tags_line"></div>
                 </div>
@@ -153,18 +172,19 @@
     <section class="result">
         <div class="container">
             <div class="result_text col-lg-6">
-                <h2>С нами - результат
+                <h2 class="wow fadeInUp" data-wow-delay="0s">С нами - результат
                     гарантирован</h2>
-                <p>Каждому клиенту мы гарантируем окупаемость расходов
+                <p class="wow fadeInUp" data-wow-delay="0.1s">Каждому клиенту мы гарантируем окупаемость расходов
                     на маркетинг и реальные результаты от продвижения в виде
                     продаж, посещений, клиентов, увеличения продаж и популярности.</p>
-                <a href="#">Получить консультацию</a>
+                <a class="wow fadeInUp" data-wow-delay="0.2s" href="#">Получить консультацию</a>
             </div>
-            <div class="resul_img col-lg-6"><img src="img/Mobile Marketing-bro 1.png" alt=""></div>
+            <div class="resul_img col-lg-6 wow fadeInRight"><img src="img/Mobile Marketing-bro 1.png" alt=""></div>
         </div>
     </section>
 
-    <section class="uslugi parallax-window" data-parallax="scroll" data-image-src="./img/bg.png">
+    <section class="uslugi">
+        <!-- <section class="uslugi parallax-window" data-parallax="scroll" data-image-src="./img/bg.png"> -->
         <div class="container">
             <h3>Мы предлагаем следующие услуги :</h3>
             <div class="uslugi_div">
@@ -267,7 +287,8 @@
 
         </div>
     </section>
-    <section class="market parallax-window" data-parallax="scroll" data-image-src="./img/bg.png">
+    <section class="market">
+        <!-- <section class="market parallax-window" data-parallax="scroll" data-image-src="./img/bg.png"> -->
         <div class="container">
             <div class="result_text col-lg-6">
                 <h2>Вы нашли маркетолога, который

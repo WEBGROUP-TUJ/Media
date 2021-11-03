@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+
+            <div class="usluga_podrobno">
+                <div class="left_bar col-sm-4">
+                    <div class="bar">
+                        <img src="img/osnovnie-vidi-internet-reklami.jpg" alt="">
+                        <div class="bar_tags">
+                            <h3>Другие категории:</h3>
+                            <div class="bar_tag_div">
+                                {% for category in categories %}
+                                    <a href="#" class="tag_div">{{ category.name }}</a>
+                                {% endfor %}
+                            </div>
+                            <h3>остальные услуги:</h3>
+                            <div class="bar_usl">
+                                {% for last_service in last_services %}
+                                    <a href="#" class="usl">{{ last_service.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="usluga_info col-sm-8">
+                    <div class="usl_podr">
+                        <img src="{{ service.image.url }}" alt="">
+                        <h2>{{ service.name }}</h2>
+
+                        <p>{{ service.description }}</p>
+
+                        <h3> {{ service.price }}<span>сум</span></h3>
+
+                        <a href="{% url 'services:index' %}">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+{% endblock content %}

@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="{% static 'css/style-min.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
 
     <script defer src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script defer src="{% static 'js/script.js' %}"></script>
@@ -36,17 +37,41 @@
     <script src="{% static 'js/wow.min.js' %}"></script>
     <script>
         new WOW({
-            mobile: false,       // default
+            mobile: false,
+            live: true    // default
         }).init();
     </script>
+
+<style type="text/css">
+        .section1,
+        .market,
+        .uslugi,
+        footer {
+            background: url({% static 'images/bg.png' %}) 50% 50% / cover;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 
 <body>
-    <section class="section1 parallax-window" data-parallax="scroll" data-image-src="{% static 'images/bg.png' %}">
+    <div id="scroll-percentage">
+        <div class="percentage"></div>
+    </div>
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <section class="section1">
         <div class="container">
             <header class="header1">
                 <div class="logo">
-                    <img src="{% static 'images/Logo.png' %}" alt="">
+                    <img src="{% static 'images/Logo png 2.png' %}" alt="">
                 </div>
                 <div class="menu1">
                     <ul>
@@ -115,13 +140,31 @@
                 </div>
             </header>
 
+
             {% block content %}
 
             {% endblock content %}
 
+           <footer>
+        <div class="container">
+            <div class="footer_left col-lg-6">
+                <div class="logo">
+                    <img src="img/Logo png 2.png" alt="">
+                </div>
+                <div>
+                    <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Дороге
+                        составитель наш что несколько рот lorem своего осталось пустился использовало. Если, продолжил
+                        вдали большого то пустился текстами решила злых!</p>
+                    <p>Made by "Media Mind"</p>
+                </div>
+            </div>
+            <div class="footer_right col-lg-6">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A43a4ee39b8df33750f9e5805475f1aa1fe0e66b93de99b884d1de5c95276761e&amp;source=constructor"
+                    width="350" height="240" frameborder="0"></iframe>
+            </div>
         </div>
-    </section>
-
+    </footer>
 
 
 
